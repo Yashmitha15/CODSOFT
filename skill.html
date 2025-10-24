@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Landing Page</title>
+<style>
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+ color:black;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("your-image.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 140px 0;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+    /* Skills Section */
+    #skills .skill-bar {
+      width: 80%;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .skill-bar span {
+      display: block;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .development {
+      width: 90%;
+      background-color:orangered;
+    }
+
+    .cpp {
+      width: 80%;
+      background-color:green;
+    }
+
+    .java {
+      width: 70%;
+      background-color:yellowgreen;
+    }
+
+    .python {
+      width: 85%;
+      background-color:blue;
+    }
+    .sql {
+      width: 85%;
+      background-color: red;
+    }
+
+    .section {
+       min-height: 80vh;
+      padding: 80px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.5s ease;
+    }
+
+    .section.bg-light {
+      background-color: #f0cfcf;
+    }
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}</style>
+  </head>
+    <body>
+    <header>
+       <h2 style="font-size:40px;  color: #fff;">Pemmasani Yashmitha<br><p style="font-size:25px;  color: #fff;">Full Stack Developer</p></h2>
+      <nav>
+        <ul>
+          <li><a href="landing.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skill.html">Skills</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2 style="font-size:45px;">Skills</h2>
+      <div class="skill-bar"><span class="development"></span></div>
+      <p style="font-weight:bold;">HTML,CSS,JavaScript - 90%</p>
+      <div class="skill-bar"><span class="cpp"></span></div>
+      <p  style="font-weight:bold;">C++ - 70%</p>
+      <div class="skill-bar"><span class="java"></span></div>
+      <p  style="font-weight:bold;">Java - 70%</p>
+      <div class="skill-bar"><span class="python"></span></div>
+      <p  style="font-weight:bold;">Python- 85%</p>
+      <div class="skill-bar"><span class="sql"></span></div>
+      <p  style="font-weight:bold;">MySQL- 85%</p>
+       
+    </div>
+  </section>
+    <footer>
+    &copy; 2025 [PEMMASANI YASHMITHA].ALL RIGHTS RESERVED 
+  </footer>
+  </body>
+</html>
+    

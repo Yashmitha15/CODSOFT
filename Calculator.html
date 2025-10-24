@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 80px;
+      font-family: Arial, sans-serif;
+    }
+
+    input {
+      width: 150px;
+      text-align: right;
+      background-color: #f0bf0eff;
+      border: 2px solid #4682b4;
+      color: #333;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #f0a500;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .operator {
+      background-color: #ff6f61;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+  <input type="text" id="display" readonly />
+
+  <div>
+    <button onclick="append('1')">1</button>
+    <button onclick="append('2')">2</button>
+    <button onclick="append('3')">3</button>
+    <button class="operator" onclick="append('+')">+</button>
+  </div>
+  <div>
+    <button onclick="append('4')">4</button>
+    <button onclick="append('5')">5</button>
+    <button onclick="append('6')">6</button>
+    <button class="operator" onclick="append('-')">-</button>
+  </div>
+  <div>
+    <button onclick="append('7')">7</button>
+    <button onclick="append('8')">8</button>
+    <button onclick="append('9')">9</button>
+    <button class="operator" onclick="append('*')">*</button>
+  </div>
+  <div>
+    <button class="operator" onclick="clearDisplay()">C</button>
+    <button onclick="append('0')">0</button>
+    <button class="operator" onclick="calculate()">=</button>
+    <button class="operator" onclick="append('/')">/</button>
+  </div>
+
+  <script>
+    const display = document.getElementById("display");
+
+    function append(value) {
+      display.value += value;
+    }
+
+    function clearDisplay() {
+      display.value = "";
+    }
+
+    function calculate() {
+      try {
+        display.value = eval(display.value);
+      } catch {
+        display.value = "Error";
+      }
+    }
+  </script>
+</body>
+</html>
